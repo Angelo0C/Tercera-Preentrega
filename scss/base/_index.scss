@@ -5,10 +5,10 @@
 
 .titulo-main {
     margin-top: 6rem;
-   @include font;
+    @include font;
     text-align: center;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 25px;
 
 }
 
@@ -32,7 +32,7 @@
 
     img {
         height: 85%;
-        width: 100%;
+        width: 95%;
         border: 4px solid black;
         border-radius: 40px;
         box-shadow: 0 0 20px $color-main;
@@ -80,31 +80,272 @@
     opacity: 0;
     transition: 0.4s;
 
-    &:hover{
+    &:hover {
         opacity: 1;
-    transition: 0.4s;
-    box-shadow: 0 0 20px $color-main;
+        transition: 0.4s;
+        box-shadow: 0 0 20px $color-main;
     }
 
-   h2{
-    font-size: 10px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-family: "Protest Guerrilla", sans-serif;
-   }
- 
-  p{
-    font-size: 20px;
-    color: $color-main;
-    margin-bottom: 10px;
-    font-family: "Protest Guerrilla", sans-serif;
-  }
+    h2 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-family: "Protest Guerrilla", sans-serif;
+    }
 
-  >*{
-    transform: translateY(25px);
-    transition: 0.7s;
-    &:hover{
+    p {
+        font-size: 30px;
+        color: $color-main;
+        margin-bottom: 10px;
+        font-family: "Protest Guerrilla", sans-serif;
+    }
+
+    >* {
+        transform: translateY(5px);
+        transition: 0.7s;
+
+        &:hover {
+            transform: translateY(0px);
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+
+    /* index section starts */
+    .titulo-main {
+        margin-top: 6rem;
+        @include font;
+        text-align: center;
+
+    }
+
+    .titulo-secundario {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        @include font;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .index-image {
+
+        margin-top: 80px;
+        display: grid;
+        gap: 60px;
+        margin: 10px;
+        margin-left: 8rem;
+        align-content: center;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        overflow: hidden;
+
+    }
+
+    .index-image img {
+        height: 85%;
+        width: 100%;
+        border: 4px solid #141413;
+        border-radius: 40px;
+        box-shadow: 0 0 20px $color-main;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        overflow: hidden;
+
+    }
+
+    .imagen-principal {
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+
+    }
+
+    .imagen-principal img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+
+    }
+
+
+    .contenido-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.4s;
+
+    }
+
+    .contenido-img:hover {
+        opacity: 1;
+        transition: 0.4s;
+        box-shadow: 0 0 20px $color-main;
+    }
+
+    .contenido-img h2 {
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-family: "Protest Guerrilla", sans-serif;
+
+    }
+
+    .contenido-img p {
+        font-size: 30px;
+        color: $color-main;
+        margin-bottom: 10px;
+    }
+
+    .contenido-img>* {
+        transform: translateY(25px);
+        transition: 0.7s;
+
+    }
+
+    .contenido-img:hover>* {
         transform: translateY(0px);
+
     }
-  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .titulo-main {
+        margin-top: 6rem;
+        @include font;
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+    
+    }
+
+
+    .index-image {
+        width: 90%;
+        margin-top: 80px;
+        display: grid;
+        gap: 70px;
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-right: auto;
+        align-content: center;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400px;
+        overflow: hidden;
+
+        img {
+            height: 85%;
+            width: 100%;
+            border: 4px solid #141413;
+            border-radius: 40px;
+            box-shadow: 0 0 20px $color-main;
+        }
+
+
+    }
+
+
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .imagen-principal {
+        width: 85%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+
+        }
+
+        .contenido-img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.4s;
+
+            &:hover {
+                opacity: 1;
+                transition: 0.4s;
+                box-shadow: 0 0 20px #FFCC29;
+            }
+
+            h2 {
+                font-size: 60px;
+                color: #ffffff;
+                margin-bottom: 10px;
+                font-family: "Protest Guerrilla", sans-serif;
+
+            }
+
+            p {
+                font-size: 40px;
+                color: #FFCC29;
+                margin-bottom: 10px;
+            }
+
+            * {
+                transform: translateY(25px);
+                transition: 0.7s;
+
+                &:hover>* {
+                    transform: translateY(0px);
+                }
+
+            }
+        }
+    }
 }

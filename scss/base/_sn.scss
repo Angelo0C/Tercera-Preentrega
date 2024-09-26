@@ -1,7 +1,8 @@
 // import de variables
 @import "../utilidades/variables";
 // import de mixin
-@import  "../utilidades/mixin";
+@import "../utilidades/mixin";
+
 .encontrar {
     padding-top: 6rem;
     margin-bottom: 0;
@@ -24,10 +25,71 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 15px;
     margin-left: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     position: relative;
 
     h3 {
         font-size: 16px;
+    }
+}
+
+
+.mapa {
+
+    position: relative;
+    height: 300px;
+    width: 80%;
+    margin-left: 3rem;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {}
+
+
+
+@media (min-width: 1024px) {
+
+    /* about us section starts */
+
+    .encontrar {
+        padding-top: 6rem;
+        margin-bottom: 0;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2rem;
+        color: $color-main;
+        text-shadow: #000000 10px 10px 6px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .Au {
+        width: 95%;
+        color: $color-main;
+        background-color: rgb(33, 33, 33);
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px black;
+        font-size: 3px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        h3 {
+            font-size: 16px;
+        }
+
+    }
+
+
+
+    .mapa {
+
+        position: relative;
+        height: 300px;
+        width: 95%;
+        margin: 1rem;
+        z-index: 1;
     }
 }
