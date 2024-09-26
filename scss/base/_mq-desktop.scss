@@ -1,0 +1,269 @@
+// import de variables
+@import "../utilidades/variables";
+// import de mixin
+@import "../utilidades/mixin";
+
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+
+    .index-image {
+        width: 83%;
+        margin-top: 80px;
+        display: grid;
+        gap: 70px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400px;
+        overflow: hidden;
+
+        img {
+            height: 85%;
+            width: 100%;
+            border: 4px solid #141413;
+            border-radius: 40px;
+            box-shadow: 0 0 20px $color-main;
+        }
+
+
+    }
+
+
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .imagen-principal {
+        width: 85%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+
+        }
+
+        .contenido-img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.4s;
+
+            &:hover {
+                opacity: 1;
+                transition: 0.4s;
+                box-shadow: 0 0 20px #FFCC29;
+            }
+
+            h2 {
+                font-size: 60px;
+                color: #ffffff;
+                margin-bottom: 10px;
+                font-family: "Protest Guerrilla", sans-serif;
+
+            }
+
+            p {
+                font-size: 40px;
+                color: #FFCC29;
+                margin-bottom: 10px;
+            }
+
+            * {
+                transform: translateY(25px);
+                transition: 0.7s;
+
+                &:hover>* {
+                    transform: translateY(0px);
+                }
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+/* products section starts */
+
+.box {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px 300px;
+    margin-top: 70px;
+
+    img {
+        height: 60%;
+        width: 40%;
+        margin-left: 18rem;
+    }
+
+    section button {
+        position: relative;
+        width: 100px;
+        background-color: #383735;
+        color: $color-main;
+        margin-left: 20rem;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        border-radius: 20px;
+        padding: 0.4rem;
+        box-shadow: 2px 2px 10px $color-main;
+        transition: 0.5s;
+
+
+    }
+
+}
+
+
+
+
+
+/* contact section starts */
+.contact-form {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 120px;
+    box-shadow: $color-secundario 2px 5px 20px 4px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+
+    label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+        color: $color-main;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #555555;
+        color: #ffffff;
+
+        &::placeholder {
+            color: #cccccc
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: $color-main;
+            /* Botón azul */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-tres;
+                transition: 0.8s;
+
+            }
+        }
+    }
+}
+
+
+/* about us section starts */
+
+.encontrar {
+    padding-top: 6rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: $color-main;
+    text-shadow: #000000 10px 10px 6px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Au {
+    width: 95%;
+    color: $color-main;
+    background-color: rgb(33, 33, 33);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    font-size: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+
+.mapa {
+
+    position: relative;
+    height: 300px;
+    width: 95%;
+    margin: 1rem;
+    z-index: 1;
+}
+
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+/* Estilos de Dektop  ends*/

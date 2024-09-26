@@ -1,0 +1,63 @@
+// import de variables
+@import "../utilidades/variables";
+// import de mixin
+@import  "../utilidades/mixin";
+
+.contact-form {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 120px;
+    box-shadow: $color-main 2px 5px 20px 4px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+
+    label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+        color: $color-main;
+    }
+
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #555555;
+        color: #ffffff;
+
+        &::placeholder {
+            color: #cccccc;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-main;
+        /* Botón azul */
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-tres;
+            transition: 0.8s;
+        }
+    }
+}

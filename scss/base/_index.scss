@@ -1,0 +1,110 @@
+// import de variables
+@import "../utilidades/variables";
+// import de mixin
+@import "../utilidades/mixin";
+
+.titulo-main {
+    margin-top: 6rem;
+   @include font;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+
+}
+
+.titulo-secundario {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    @include font;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.index-image {
+
+    margin-top: 80px;
+    display: grid;
+    gap: 12px;
+    margin: 10px;
+    margin-left: 4rem;
+    align-content: center;
+
+    img {
+        height: 85%;
+        width: 100%;
+        border: 4px solid black;
+        border-radius: 40px;
+        box-shadow: 0 0 20px $color-main;
+    }
+
+}
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    overflow: hidden;
+
+}
+
+.imagen-principal {
+    width: 90%;
+    position: relative;
+    margin-left: 1.3rem;
+    margin-top: 2rem;
+
+    img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+
+    }
+}
+
+.contenido-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.4s;
+
+    &:hover{
+        opacity: 1;
+    transition: 0.4s;
+    box-shadow: 0 0 20px $color-main;
+    }
+
+   h2{
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: "Protest Guerrilla", sans-serif;
+   }
+ 
+  p{
+    font-size: 20px;
+    color: $color-main;
+    margin-bottom: 10px;
+    font-family: "Protest Guerrilla", sans-serif;
+  }
+
+  >*{
+    transform: translateY(25px);
+    transition: 0.7s;
+    &:hover{
+        transform: translateY(0px);
+    }
+  }
+}
