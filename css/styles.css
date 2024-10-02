@@ -52,6 +52,18 @@
   transition: 0.8s;
 }
 
+.footer-contact{
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  font-size: 16px;
+  
+}
+
 @media (min-width: 768px) {
   .contact-form {
     background-color: #181818;
